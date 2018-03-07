@@ -1,0 +1,16 @@
+Here is my archived workspace, tried to name the different schematics and data displays logically, let me know if you've got questions
+
+I'm also including the LTspice file and the .s2p file. The .s2p file is already in the project in the data folder, but I'm not sure if it zipped in with the project.
+
+I recommend simulating the .s2p file to get an idea of the noise of the amplifier. I just took the s parameter data from the datasheet and made an .s2p file.
+
+Also I'm attaching reference docs for Amplifier design, both PA and LNA from Gabriel Rebeiz UCSD. 
+
+These include the stability factor, maxgain blocks etc that I was mentioning and have included in my ADS simulations. I don't understand all this stuff too well yet to explain well, but these tutorials help in understanding how to use them at least!
+
+The ltspice files:
+v4 could be a good PA it gets pretty good gain and response at our frequency
+
+v5 has the values from the ADS noise figure optimization and simulation and still has gain, but not as much, but should have a good low noise figure ~4.4 dB.
+
+I'm planning to build v5 first, this is what I'm making the layout for. I've added a spot to the layout for a resistor on the collector to vcc, but I don't think I'll need it and will likely just bridge that.
